@@ -26,7 +26,7 @@
     }
     li.addEventListener('click', () => {
       mainImage.src = image;
-      const thumbnails = document.querySelectorAll('.thumbnails li');
+      const thumbnails = document.querySelectorAll('.thumbnails > li');
       thumbnails[currentIndex].classList.remove('current');
       currentIndex = index;
       thumbnails[currentIndex].classList.add('current');
